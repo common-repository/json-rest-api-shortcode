@@ -1,0 +1,104 @@
+/* Some basic white-spacing for our form and output. */
+#sjf-wp_api-shortcode-form,
+#sjf-wp_api-shortcode-output {
+	line-height: 2em;
+	margin: 2em;
+	padding: 2em;
+	background: rgba( 0, 0, 0, .0375 );
+}
+
+/* A border treatment for our form, output, and inputs. */ 
+#sjf-wp_api-shortcode-form,
+#sjf-wp_api-shortcode-output,
+.sjf-wp_api-shortcode-input,
+.sjf-wp_api-shortcode-disclaimer  {
+	border: 1px solid rgba( 0, 0, 0, .5 );
+	border-radius: .125em;
+}
+
+/* Let's just do tubes of content in the form. */
+.sjf-wp_api-shortcode-input,
+.sjf-wp_api-shortcode-button {
+	display: block;
+	width: 100%;
+}
+
+/* We're kind of using output like a div -- it needs to display block. */
+#sjf-wp_api-shortcode-output { display: block; }
+
+/* Some whitespace control within output. */
+#sjf-wp_api-shortcode-output >:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/* Use a code-y font for labels and output. */
+#sjf-wp_api-shortcode-output,
+.sjf-wp_api-shortcode-label {
+	font-family: courier, monospace;
+	font-weight: 400;
+}
+
+/* Some basic whitespacing for form inputs. */ 
+.sjf-wp_api-shortcode-input {
+	margin-bottom: 1em;
+	padding: .25em .5em;
+}
+
+/* Achieve some visual contrast for the submit button. */
+.sjf-wp_api-shortcode-button {
+	border-radius: 3px;
+	margin-top: 2.25em;
+	padding: 1.25em;
+	text-align: center;
+}
+
+// Make the method look like it's uppercase, since we'll be forcing it to uppercase anyways.
+#sjf-wp_api-shortcode-method { text-transform: uppercase; }
+
+.sjf-wp_api-shortcode-disclaimer {
+	background: rgba( 255, 255, 0, .25 );
+	padding: .25em .5em;
+}
+
+/* Some more whitespace control within output. */
+#sjf-wp_api-shortcode-output >:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.sjf-wp_api-shortcode-output-node:not( :last-child ) {
+	border-bottom: 1px dotted rgba( 0, 0, 0, .25 );
+	padding-bottom: 1.5em;
+	margin-bottom: 2em;
+}
+
+h3.sjf-wp_api-shortcode-output-subtitle {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+p.sjf-wp_api-shortcode-output-content {
+	margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+/* Any time our plugin needs to hide something... */ 
+.sjf-wp_api-shortcode-hide {
+	opacity: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	line-height: 0;
+	font-size: 0;
+}
+
+/* Any time our plugin needs to reveal something... */ 
+body .sjf-wp_api-shortcode-show {
+	opacity: 1;
+	-moz-transition: opacity 1s ease-in-out;
+		-webkit-transition: opacity 1s ease-in-out;
+		transition: opacity 1s ease-in-out;
+}
